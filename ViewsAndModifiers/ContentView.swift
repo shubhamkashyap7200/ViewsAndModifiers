@@ -8,15 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+//    @State private var usedRedText = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Hello World")
+            Text("Hello World")
+                .font(.subheadline)
+            Text("Hello World")
+            Text("Hello World")
         }
-        .padding()
+        .font(.largeTitle.bold())
+        .blur(radius: 5.0)
+        
+        
+        
+//            Button("Press Me", role: .destructive) {
+//                // do nothing
+//                usedRedText.toggle()
+//            }
+//            .foregroundColor(usedRedText == true ? .blue : .red)
+//            .background(usedRedText == true ? Color.red : Color.blue)
     }
+    
 }
 
 #Preview {
